@@ -1,0 +1,14 @@
+{
+  "name": "site_design",
+  "version": "1.0.0",
+  "description": "un site d'entrainement",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Fleury VUADIAMBO",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.7"
+  }
+}
