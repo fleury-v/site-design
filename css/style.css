@@ -12007,7 +12007,7 @@ footer li:first-child {
     background-repeat: no-repeat;
     background-position-y: 32%;
     background-position-x: 36%;
-    height: 60vh;
+    min-height: 70vh;
     border-bottom-left-radius: 100px;
   }
   .title-subtitle {
