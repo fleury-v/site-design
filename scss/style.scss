@@ -144,13 +144,24 @@ footer li:first-child {
 
 // RESPONSIVE WEB DESIGN
 @media screen and (max-width: 576px) {
+  * {
+    margin: 0;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  section p, section.pattern-circles p, section.laptop-desktop .article p {
+    text-align: center;
+  }
+
   header {
     background-image: url("../img/bg-pattern-intro.svg");
     background-size: 1459px;
     background-repeat: no-repeat;
     background-position-y: 32%;
     background-position-x: 36%;
-    filter: invert(70);
     height: 60vh;
     border-bottom-left-radius: 100px;
   }
@@ -167,4 +178,72 @@ footer li:first-child {
   .title-subtitle p {
     margin-bottom: 21px;
   }
+
+  main section:first-child {
+    margin-top: 70px;
+    margin-bottom: 330px;
+  }
+
+  section:first-child h3,
+  section.pattern-circles,
+  section.laptop-desktop {
+    text-align: center;
+  }
+
+  p {
+    margin: 0 auto;
+  }
+
+  section:first-child .editor-desktop {
+    background-image: url("../img/illustration-editor-mobile.svg");
+    background-position-x: center;
+    min-height: 331px;
+    position: static;
+    padding: 0;
+  }
+
+  section.pattern-circles {
+    background-position: center;
+    background-size: 569px;
+    background-position-y: -208px;
+    background-position-x: -83px;
+    min-height: 650px;
+  }
+
+  section.pattern-circles img {
+    top: -157px;
+    left: 16px;
+    width: 350px;
+  }
+
+  section.pattern-circles .article {
+    margin: 124px 0 0 0;
+  }
+
+  section.laptop-desktop {
+    background: none;
+  }
+
+  section.laptop-desktop .laptop-mobile {
+    background-image: url("../img/illustration-laptop-mobile.svg");
+    background-position-x: center;
+    background-repeat: no-repeat;
+    min-height: 400px;
+
+  }
+
+  section.laptop-desktop .article {
+    position: static;
+  }
+
+  footer .title {
+    margin: 60px 0 30px 0;
+    text-align: center;
+  }
+
+  footer p,
+  footer ul li {
+    text-align: center;
+  }
+
 }
